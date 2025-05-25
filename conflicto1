@@ -1,0 +1,82 @@
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main)
+$ git pull origin main
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 642 bytes | 19.00 KiB/s, done.
+From https://github.com/AymaraC/Actividad-clase-6
+ * branch            main       -> FETCH_HEAD
+   856fe27..fb0696b  main       -> origin/main
+Updating 856fe27..fb0696b
+Fast-forward
+ azul.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main)
+$ git add blanco.txt
+warning: in the working copy of 'blanco.txt', LF will be replaced by CRLF the next time Git touches it
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main)
+$ git commit -m "Modifique el archivo blanco.txt"
+[main c00f005] Modifique el archivo blanco.txt
+ 1 file changed, 1 insertion(+)
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main)
+$ git push origin main
+To https://github.com/AymaraC/Actividad-clase-6.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/AymaraC/Actividad-clase-6.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main)
+$ 0.
+bash: 0.: command not found
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 305 bytes | 5.00 KiB/s, done.
+From https://github.com/AymaraC/Actividad-clase-6
+ * branch            main       -> FETCH_HEAD
+   fb0696b..2c6db7a  main       -> origin/main
+Auto-merging blanco.txt
+CONFLICT (content): Merge conflict in blanco.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main|MERGING)
+$ git add blanco.txt
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main|MERGING)
+$ git commit -m "Unifique la información"
+[main f35d22f] Unifique la información
+
+
+Aymi@DESKTOP-EQBO46H MINGW64 ~/OneDrive/Desktop/ADA_TRABAJOS/clase_6/Actividad-clase-6 (main)
+$ git push origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 646 bytes | 323.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/AymaraC/Actividad-clase-6.git
+   2c6db7a..f35d22f  main -> main
+
+   // Resolvimos este conflicto realizando un pull origin main así se me descargaban los cambios que realizo mi compañera y después unifique ambos cambios para así poder hacer un git push origin main y que queden los cambios realizados. //
+   
