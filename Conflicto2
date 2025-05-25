@@ -1,0 +1,119 @@
+$ git add azul.txt
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git commit -m "modifique archivo azul.txt"
+[main 2457fb2] modifique archivo azul.txt
+ 1 file changed, 1 insertion(+)
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git push origin main
+To https://github.com/AymaraC/Actividad-clase-6.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/AymaraC/Actividad-clase-6.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use   
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0 (from 0)  
+Unpacking objects: 100% (3/3), 312 bytes | 15.00 KiB/s, done.
+From https://github.com/AymaraC/Actividad-clase-6
+ * branch            main       -> FETCH_HEAD
+   abbe9a7..856fe27  main       -> origin/main
+error: Your local changes to the following files would be overwritten by merge:
+        azul.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git pull origin main 
+From https://github.com/AymaraC/Actividad-clase-6
+ * branch            main       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+        azul.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ it pull origin main 
+bash: it: command not found
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git pull origin main 
+From https://github.com/AymaraC/Actividad-clase-6
+ * branch            main       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+        azul.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git restore azul.txt  # Borra los cambios locales
+git pull origin main
+From https://github.com/AymaraC/Actividad-clase-6
+ * branch            main       -> FETCH_HEAD
+Auto-merging azul.txt
+CONFLICT (content): Merge conflict in azul.txt
+Automatic merge failed; fix conflicts and then commit the result.      
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main|MERGING)
+$ git push origin main
+To https://github.com/AymaraC/Actividad-clase-6.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/AymaraC/Actividad-clase-6.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main|MERGING)
+$ git pull origin main
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main|MERGING)
+$ git pull 
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main|MERGING)
+$ git add azul.txt
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main|MERGING)
+$ git commit -m "modifique y unifique ambos archivos"
+[main fb0696b] modifique y unifique ambos archivos
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git pull origin main
+From https://github.com/AymaraC/Actividad-clase-6
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Karen@DESKTOP-QSEQ1NG MINGW64 ~/Desktop/intro_javascript/clase6/Actividad-clase-6 (main)
+$ git push origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 662 bytes | 220.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.   
+To https://github.com/AymaraC/Actividad-clase-6.git
+   856fe27..fb0696b  main -> main
+
+
+   Me confundi en una parte y elimine parte del archivo. Desde ese momento intentamos resolvelo y no habia forma. Entonces, buscamos en linea como resolverlo y la solución que encontramos fue utilizar "git restore" para tener de nuevo el mismo archivo sin los cambios que realice, luego utilice git add para agregarlo de nuevo, git commit -m, git pull y git origin para que no saltara ningun error 
+   
